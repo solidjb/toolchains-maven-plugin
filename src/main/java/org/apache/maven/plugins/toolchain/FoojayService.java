@@ -112,7 +112,6 @@ public class FoojayService {
       archiveType = "zip";
     }
     String archName = getArchName();
-    String bitness = archName.equals("x32") ? "32" : "64";
     String libcType;
     switch (os) {
       case "linux":
@@ -133,7 +132,6 @@ public class FoojayService {
       + "&version=" + version
       + "&operating_system=" + os
       + "&architecture=" + archName
-      + "&bitness=" + bitness
       + "&archive_type=" + archiveType
       + "&libc_type=" + libcType
       + "&latest=overall&package_type=jdk&discovery_scope_id=directly_downloadable&match=any&javafx_bundled=false&directly_downloadable=true&release_status=ga";
