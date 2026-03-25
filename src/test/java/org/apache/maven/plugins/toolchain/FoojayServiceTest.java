@@ -28,7 +28,7 @@ public class FoojayServiceTest {
 
     @Test
     public void testParseDownloadUrl() throws Exception {
-        final String[] jdkLoadUrl = foojayService.parseFileNameAndDownloadUrl("17", "oracle-open-jdk");
+        final String[] jdkLoadUrl = foojayService.parseFileNameAndDownloadUrl("25", "oracle-open-jdk");
         System.out.println("filename: " + jdkLoadUrl[0]);
         System.out.println("url: " + jdkLoadUrl[1]);
     }
@@ -42,6 +42,6 @@ public class FoojayServiceTest {
 
     @Test
     public void testDownloadAndExtract() throws Exception {
-        foojayService.downloadAndExtractJdk("15", "oracle_open_jdk");
+        foojayService.downloadAndExtractJdk("25", "oracle_open_jdk");
     }
 }
